@@ -1,17 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    long num1,num2;
-    printf("Enter two numbers:");
-    scanf("%ld %ld",&num1,&num2);
-    if(num1>num2)
+    int num1,num2;
+    scanf("%d",&num1);
+    scanf("%d",&num2);
+    switch(num1>num2)
     {
-    printf("%ld",num1);
+        case 1: printf("%d",num1);break;
+        default: printf("%d",num2);break;
     }
-    else
-    {
-    printf("%ld",num2);
-    }
-    return 0;
-    
 }
