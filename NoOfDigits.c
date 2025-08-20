@@ -1,16 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int num,count=0;
+    int num,a;
     scanf("%d",&num);
-    label:
-    if(num>0)
-    {
-        num=num/10; 
-        count++;
-        goto label;
-    }
-    printf("last digits : %d",count);
+    a=printf("%d",num);
+    printf("No of digits = %d",a);
     return 0;
-
+    
 }
