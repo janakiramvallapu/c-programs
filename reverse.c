@@ -1,22 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int num,rev=0,digit;
+    int num,r;
     scanf("%d",&num);
-    if(num<=0)
+    if(num<0)
     {
-        printf("Invalid input");
-        return 0;
+        printf("-");num=-num;
     }
-    label:
-    if(num>0)
+    while(num>0)
     {
-        digit=num%10;//567 7 6 5
-        rev=rev*10+digit;//765
-        num=num/10;//0
-        goto label;
+        r=num%10;
+        printf("%d",r);
+        num=num/10;
 
     }
-    printf("%d",rev);
     return 0;
 }
