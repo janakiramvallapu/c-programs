@@ -3,29 +3,20 @@ int main()
 {
     int num,count=0;
     scanf("%d",&num);
-    label:
-    if(count<num)
+    while(num<0)
     {
-        count++;
-        printf("%d ",count);
-        
-        goto label; 
+            printf("%d",num);
+            num++;
     }
-    else if(num<0)
-    {
-    count=num;
-    label2:
-    if(count<=-1)
-    {
+    while(count<num)
+    { 
+        if(num>0)
+        {
+        count++;
         printf("%d",count);
-        count++;
-        goto label2;
+        }
     }
-    else
-    {
-        return 0;
-    }
-    }
-    return 0; 
+    return 0;
+
 
 }
