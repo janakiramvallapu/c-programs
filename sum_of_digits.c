@@ -1,18 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int num,r;
+    int num,sum=0,rem;
     scanf("%d",&num);
     if(num<0)
     {
-        printf("-");num=-num;
+        printf("-");
+        num=-num;
     }
     while(num>0)
     {
-        r=num%10;
-        printf("%d\n",r);
+        rem=num%10;//568
+        sum+=rem;
         num=num/10;
 
     }
+    printf("%d",sum);
     return 0;
 }
