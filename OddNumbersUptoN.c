@@ -9,7 +9,7 @@ int main()
         return 0;
     }
     printf("Odd numbers up to %d: ",num);
-    while(count<num)
+    do
     {
         count++;
         if(count%2!=0)
@@ -17,6 +17,7 @@ int main()
              printf("%d ",count);
         }
     }
+    while(count<num);
     return 0;
 
 }
