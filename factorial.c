@@ -1,13 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int num,fact=1;
+    int num,i;
+    long fact = 1;
     scanf("%d",&num);
-    while(num>0)
+    if(num<0)
     {
-        fact=fact*num;
-        num--;
+        printf("Invalid input Please enter a positive integer.");
+        return 0;
     }
-    printf("%d",fact);
-    return 0;
+    for(i=1;i<=num;i++)
+    {
+        fact=fact*i;
+    }
+    printf("Factorial of %d = %d\n",num,fact);
 }
